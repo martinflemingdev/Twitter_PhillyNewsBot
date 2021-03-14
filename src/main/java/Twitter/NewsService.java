@@ -11,8 +11,6 @@ public class NewsService {
 	public static final String URL = "https://newsapi.org/v2/everything?qInTitle=philadelphia&language=en&apiKey=9f31cc0c6f26434c832af1be40a0756f";
 	public RestTemplate restTemplate = new RestTemplate();
 	
-	String fullURL = "&to=2021-03-13&from=2021-03-13";
-	
 	// API calling method
 	
 	public NewsObject getNews() {

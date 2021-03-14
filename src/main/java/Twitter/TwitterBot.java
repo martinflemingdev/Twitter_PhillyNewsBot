@@ -12,7 +12,7 @@ public class TwitterBot {
     public static void main(String[] args){
 
 		while (true) {
-			if (LocalTime.now().getMinute() == 0 &&
+			if (LocalTime.now().getMinute() == 4 &&
 				LocalTime.now().getSecond() == 0 &&
 				LocalTime.now().getNano() > 990000000 )
 			{

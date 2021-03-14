@@ -6,12 +6,7 @@ public class CLI {
 	
 	public static void main(String[] args){
 		
-//		NewsService news = new NewsService();
-//		String title = "";
-//		title = news.getNews().getArticles()[0].getTitle();
-//		
-//		String url = "";
-//		url = news.getNews().getArticles()[0].getUrl();
+		// Test for query string
 		
 		int year = LocalDate.now().getYear();
 		int month = LocalDate.now().getMonthValue();
