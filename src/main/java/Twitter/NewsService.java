@@ -14,10 +14,13 @@ public class NewsService {
 	// API calling method
 	
 	public NewsObject getNews() {
+		
 		int year = LocalDate.now().getYear();
 		int month = LocalDate.now().getMonthValue();
 		int day = LocalDate.now().getDayOfMonth();
-		NewsObject results = restTemplate.getForObject(URL + "&to=" + year + "-" + month + "-" + day + "&from=" + year + "-" + month + "-" + day , NewsObject.class);
+		
+		NewsObject results = restTemplate.getForObject
+				(URL + "&to=" + year + "-" + month + "-" + day + "&from=" + year + "-" + month + "-" + day , NewsObject.class);
 		return results;
 	}
 	

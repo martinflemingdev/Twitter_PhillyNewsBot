@@ -12,7 +12,12 @@ public class TwitterBot {
     public static void main(String[] args){
 
 		while (true) {
-			if (LocalTime.now().getMinute() == 4 &&
+			
+			// everyday at 8AM and 8PM
+			
+			if ((LocalTime.now().getHour() == 8  ||
+				LocalTime.now().getHour() == 20) &&
+				LocalTime.now().getMinute() == 0 &&
 				LocalTime.now().getSecond() == 0 &&
 				LocalTime.now().getNano() > 990000000 )
 			{
@@ -26,10 +31,8 @@ public class TwitterBot {
 				url = todaysNews.getArticles()[0].getUrl();
 				
 				newTweet(title + "\n" + url);
-				
 			}
 		}
-        
     }
     
     public static void newTweet(String tweet) {
