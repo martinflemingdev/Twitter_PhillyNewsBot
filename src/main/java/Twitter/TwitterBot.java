@@ -12,16 +12,18 @@ public class TwitterBot {
     public static void main(String[] args){
 
 		while (true) {
-			if (LocalTime.now().getMinute() == 23 &&
+			if (LocalTime.now().getMinute() == 0 &&
 				LocalTime.now().getSecond() == 0 &&
 				LocalTime.now().getNano() > 990000000 )
 			{
 				NewsService news = new NewsService();
+				NewsObject todaysNews = news.getNews();
+				
 				String title = "";
-				title = news.getNews().getArticles()[0].getTitle();
+				title = todaysNews.getArticles()[0].getTitle();
 				
 				String url = "";
-				url = news.getNews().getArticles()[0].getUrl();
+				url = todaysNews.getArticles()[0].getUrl();
 				
 				newTweet(title + "\n" + url);
 				
