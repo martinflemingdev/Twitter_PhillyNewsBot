@@ -8,7 +8,7 @@ public class NewsService {
 
 	// instance variables
 	
-	private static final String URL = "https://newsapi.org/v2/everything?q=philadelphia&language=en&apiKey=9f31cc0c6f26434c832af1be40a0756f";
+	private static final String URL = "https://newsapi.org/v2/everything?q=philadelphia&language=en&apiKey=******************************";
 	private RestTemplate restTemplate = new RestTemplate();
 	
 	// API calling method
