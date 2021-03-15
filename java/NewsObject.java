@@ -4,9 +4,11 @@ public class NewsObject {
 
 	//instance variables
 	
-	String status;
-	int totalResults;
-	Article[] articles;
+	private String status;
+	private int totalResults;
+	private Article[] articles;
+	
+	// getters and setters
 	
 	public String getStatus() {
 		return status;

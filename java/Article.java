@@ -4,14 +4,18 @@ import java.util.Map;
 
 public class Article {
 
-	Map<String, String> source;
-	String author;
-	String title;
-	String description;
-	String url;
-	String urlToImage;
-	String publishedAt;
-	String content;
+	// instance variables
+	
+	private Map<String, String> source;
+	private String author;
+	private String title;
+	private String description;
+	private String url;
+	private String urlToImage;
+	private String publishedAt;
+	private String content;
+	
+	// getters and setters
 	
 	public Map<String, String> getSource() {
 		return source;
