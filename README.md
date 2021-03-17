@@ -11,5 +11,5 @@ https://twitter.com/phillynewsbot
 * Utilizes the free News API at newsapi.org to populate its tweet. (NewsService.java)
 * Uses LocalDate class to insert current date into the GET request sent to the News API. (NewsService.java)
 * Created classes that model the JSON data returned to implement serialization. (NewsObject.java and Article.java)
-* Uses the twitter4j (twitter 4 java) framework to interact with the Twitter API. (TwitterBot.java)
-* Scheduling handled by LocalTime class conditional logic. (TwitterBot.java)
+* Uses the twitter4j (twitter for java) framework to interact with the Twitter API. (TwitterBot.java)
+* Scheduling handled by conditional logic using LocalTime class. (TwitterBot.java)
