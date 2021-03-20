@@ -8,19 +8,16 @@ public class NewsService {
 
 	// instance variables
 	
-	private static final String URL = "https://newsapi.org/v2/everything?q=philadelphia&language=en&apiKey=******************************";
+	private static final String API_URL = "https://newsapi.org/v2/everything?q=philadelphia&language=en&apiKey=******************************";
 	private RestTemplate restTemplate = new RestTemplate();
 	
 	// API calling method
 	
 	public NewsObject getNews() {
 		
-		int year = LocalDate.now().getYear();
-		int month = LocalDate.now().getMonthValue();
-		int day = LocalDate.now().getDayOfMonth();
+		LocalDate currentDate = LocalDate.now();
 		
-		NewsObject results = restTemplate.getForObject
-				(URL + "&to=" + year + "-" + month + "-" + day + "&from=" + year + "-" + month + "-" + day , NewsObject.class);
+		NewsObject results = restTemplate.getForObject(API_URL + "&to=" + currentDate + "&from=" + currentDate, NewsObject.class);
 		return results;
 	}
 	
