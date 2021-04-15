@@ -4,7 +4,7 @@ https://twitter.com/phillynewsbot
 
 * Created @PhillyNewsBot by writting a Java program that tweets Philadelphia area news twice a day.
 * Currently runs off a Raspberry Pi4 autonomously.
-* Wrote logic to tweet at 8AM and 8PM and autofill API query parameters with current date.
+* Wrote logic to tweet at 8AM and 8PM and generate API query parameters with current date.
 
 ## Technology used:
 
